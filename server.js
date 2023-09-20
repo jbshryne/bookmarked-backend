@@ -1,4 +1,19 @@
 const express = require("express");
-const app = express();
+const morgan = require("morgan");
+const cors = require("cors");
+require("dotenv").config();
 
-app.listen(8080, () => console.log("running on 8080"));
+const app = express();
+app.use(morgan("tiny"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(cors());
+
+// const bookmarkController = require("./controllers/bookmarkController")
+
+app.get("/", (req, res) => {
+  res.send("home route");
+});
+
+const PORT = process.env.port || 8080;
+app.listen(PORT, () => console.log("listening on", PORT));
