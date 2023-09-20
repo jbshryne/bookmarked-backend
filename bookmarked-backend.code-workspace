@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../w16/express-react/backend"
+	},
+	{
+		"path": "../bookmarked-react"
+	}
+],
+  "settings": {}
+}
