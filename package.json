@@ -16,6 +16,9 @@
     "mongoose": "^7.5.2",
     "morgan": "^1.10.0"
   },
+  "engines": {
+    "node": "v20.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jbshryne/bookmarked-backend.git"
