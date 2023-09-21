@@ -6,6 +6,8 @@ mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
 });
 
+console.log("connection.js running");
+
 mongoose.connection
   .on("open", () => console.log("Your are connected to mongoose"))
   .on("close", () => console.log("Your are disconnected from mongoose"))

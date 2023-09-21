@@ -1,8 +1,10 @@
 const mongoose = require("../db/connection");
 
+console.log("Bookmark.js running");
+
 const BookmarkSchema = new mongoose.Schema({
-  title: string,
-  url: string,
+  title: String,
+  url: String,
 });
 
 const Bookmark = mongoose.model("Bookmark", BookmarkSchema);
